@@ -2,9 +2,245 @@
 <html>
     <head>
         <title>TimerHotel's Portfolio</title>
-        <link rel="icon" href="/images/favicon.png">
-    </head>
-    <body>
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <style>
+            @font-face {
+                font-family: Titillium;
+                src: url(font/TitilliumWeb-SemiBold.ttf);
+            }
+            * {
+                font-family: Titillium;
+            }
+            .navbar {
+                padding: 0;
+                margin: 0;
+                text-decoration: none;
+                list-style: none;
+                box-sizing: border-box;
+                background: #262626;
+                height: 80px;
+                width: 100%;
+                position: fixed;
+            }
+            .TimerText {
+                color: white;
+                font-size: 35px;
+                line-height: 80px;
+                padding-left: 100px;
+                font-weight: bold;
+            }
+            .navbar ul {
+                float: right;
+                margin-right: 20px;
+            }
+            .navbar ul li {
+                display: inline-block;
+                line-height: 80px;
+                margin: 0 5px;
+            }
+            .navbar a {
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                text-transform: uppercase;
+                border-radius: 3px;
+                padding: 7px 13px;
+            }
+            .navbar a:hover {
+                background: #E3CCFF;
+                transition: .25s;
+                color: white;
+            }
+            #AboutMe {
+                margin-left: 10%;
+                margin-right: 10%;
+                color: white;
+            }
+            .AboutMeInfo div {
+                float: left;
+                padding-right: 10%;
+            }
+            .profilepic {
+                border-radius: 100%;
+                border: 4px solid #E3CCFF;
+                height: 192px;
+            }
+            .AboutMeInfo {
+                font-size: 32px;
+            }
+            #PastWork {
+                margin-top: 32px;
+                margin-left: 10%;
+                margin-right: 10%;
+                color: white;
+                text-align: center;
+            }
+            .Dividor {
+                background-color:#2D2D2D;
+                width: 80%;
+                height: 3px;
+                border-radius: 12px;
+                margin-top: 64px;
+                margin-right: 10%;
+                margin-left: 10%;
+            }
+            .infobox {
+                display: flex;
+                height: 256px;
+                margin: 10px;
+                margin-bottom: 40px;
+            }
+            
+            .video {
+                width: 50%; /* Adjust the width of the video container as needed */
+                padding: 0;
+                margin: 0;
+                margin-left: 10%;
+            }
 
+            .text {
+                width: 50%; /* Adjust the width of the text container as needed */
+                padding: 10px;
+                align-self: flex-start;
+                margin: 0;
+                padding: 0;
+                margin-right: 10%;
+            }
+
+            .infoboxbutton {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                text-transform: uppercase;
+                border-radius: 3px;
+                padding: 7px 13px;
+                background-color: #494949;
+            }
+
+            .infoboxbutton:hover {
+                background-color: #E3CCFF;
+                transition: .25s;
+                color: white;
+            }
+
+            #Availability {
+                margin-top: 32px;
+                margin-left: 10%;
+                margin-right: 10%;
+                color: white;
+                text-align: center;
+            }
+
+            #Pricing {
+                margin-top: 32px;
+                margin-left: 10%;
+                margin-right: 10%;
+                color: white;
+                text-align: center;
+            }
+
+            #Contact {
+                margin-top: 32px;
+                margin-left: 10%;
+                margin-right: 10%;
+                color: white;
+                text-align: center;
+            }
+            
+        </style>
+    </head>
+    <body style="background-color: #191919;">
+        <nav class="navbar">
+            <p class="TimerText" style="color: #FFFFFF;">TimerHotel's Portfolio</p>
+            <ul>
+                <li><a href="#AboutMe">About Me</a></li>
+                <li><a href="#PastWork">Past Work</a></li>
+                <li><a href="#Availability">Availability</a></li>
+                <li><a href="#Pricing">Pricing</a></li>
+                <li><a href="#Contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <br><br><br><br><br><br>
+
+        <div id="AboutMe">
+            <div class="AboutMeInfo">
+                <div>
+                    <img class="profilepic" src="images/favicon.png">
+                </div>
+                <div style="display: inline-flex;float:left;height:24px">
+                    <p>Hello! My name is</p><p style="text-decoration: underline;margin-left: 4px;color:#E3CCFF">TimerHotel</p><p>!</p>
+                </div><br>
+                <p style="font-size: 24px;margin-top:8px;">I am 23 years old and live in Denmark. I have been programming on Roblox for almost a decade, and I have worked on various projects, including for large Roblox groups.</p>
+                <p style="font-size: 20px;margin-top:4px;">I am familiar with advanced Lua, such as frameworks (primarily Knit), OOP, type checking, etc.</p>
+                <p style="font-size: 18px;margin-top:4px;">In addition to that, I also have knowledge of GitHub, VS Code and Trello.</p>
+            </div>
+        </div><br>
+
+        <div class="Dividor"></div>
+
+        <div id="PastWork">
+            <p style="font-size: 36px;margin-bottom:0">Past Work</p>
+            <p style="font-size: 16px;margin-top:0">Below you can find some of the things I've worked on!</p><br>
+            <div class="infobox">
+                <div class="video">
+                    <video height="256" width="512" controls>
+                        <source src="videos/Ship.mp4">
+                    </video>
+                </div>
+                <div class="text">
+                    <p style="font-size: 36px;">The Grand Crossing Border</p>
+                    <p>This is a group game. In the game I have made several systems, such as the Elevators, Fishing, Levelling and a Battle Pass. The video is a compilation of these features.</p>
+                    <a class="infoboxbutton" href="https://www.roblox.com/games/885450884/Border-Roleplay-The-Grand-Crossing">Try it here!</a>
+                </div>
+            </div>
+            <div class="infobox">
+                <div class="video">
+                    <video height="256" width="512" controls>
+                        <source src="videos/Ship.mp4">
+                    </video>
+                </div>
+                <div class="text">
+                    <p style="font-size: 36px;">Battleship</p>
+                    <p>This is a personal project. In this game you have to sink as many enemy-team ships as possible in order to win. In the video you can see a ship engaing and sinking an enemy ship.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="Dividor"></div>
+
+        <div id="Availability">
+            <p style="font-size: 36px;margin-bottom:0">Availability</p>
+            <p style="font-size: 16px;margin-top:0">I am highly accessible, with the flexibility to commit up to 20 hours per week, and I can easily accommodate your specific project requirements.</p>
+        </div>
+
+        <div class="Dividor"></div>
+
+        <div id="Pricing">
+            <p style="font-size: 36px;margin-bottom:0">Pricing</p>
+            <p style="font-size: 16px;margin-top:0;margin-bottom: 0;">I accept both USD and Robux. If paid in USD, payments must be made through my PayPal.Me link.</p>
+            <p style="font-size: 16px;margin-top:0;margin-bottom: 0;">I prefer either 100% up-front or 50% up-front and 50% upon completion. If your project payment is upon-completion, you must pay me before I send over what I've made for you.</p>
+            <p style="font-size: 16px;margin-top:0;margin-bottom: 0;">If paid in Robux you must either pay in group-payouts, or cover the tax cut Roblox takes from item sales.</p>
+        </div>
+
+        <div class="Dividor"></div>
+
+        <div id="Contact">
+            <p style="font-size: 36px;margin-bottom:0">Contact</p>
+            <p style="font-size: 16px;margin-top:0;margin-bottom: 0;">I can be contacted on Discord! My username is: timerhotel</p>
+            <p style="font-size: 16px;margin-top:0;margin-bottom: 0;">I can also be contacted on the Talent Hub.</p>
+        </div>
+
+        <div class="Dividor"></div>
+
+        <br><br><br><br><br>
+        <div style="margin:auto;width:fit-content;display: flex;align-items: left;justify-content: space-between;border-bottom: 1px solid #000;padding: 10px 30px">
+            <p style="color:white;">Made by&nbsp;</p>
+            <a href="https://www.roblox.com/users/32907189/profile" target="_blank" style="color:#E3CCFF;">TimerHotel</a>
+            <p style="color:white;"> - timerhotel - TimerHotel#2332</p>
+        </div>
     </body>
 </html>
